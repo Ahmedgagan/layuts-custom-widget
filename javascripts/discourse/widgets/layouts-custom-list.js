@@ -18,9 +18,7 @@ export default layouts.createLayoutsWidget("custom-list", {
     const topicTracking = this.register.lookup("topic-tracking-state:main");
 
     return {
-      hideExtraChildren: true,
       topicTracking,
-      hideChildren: {},
     };
   },
 
