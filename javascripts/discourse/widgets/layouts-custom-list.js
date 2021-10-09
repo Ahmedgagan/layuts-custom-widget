@@ -14,7 +14,7 @@ try {
 }
 
 export default layouts.createLayoutsWidget("custom-list", {
-  defaultState(attrs) {
+  defaultState() {
     const topicTracking = this.register.lookup("topic-tracking-state:main");
 
     return {
@@ -29,7 +29,7 @@ export default layouts.createLayoutsWidget("custom-list", {
     });
   },
 
-  html(attrs, state) {
+  html() {
     let list = [];
 
     list.push(
