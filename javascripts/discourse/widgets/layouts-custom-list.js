@@ -30,6 +30,10 @@ export default layouts.createLayoutsWidget("custom-list", {
   },
 
   html() {
+    if (!this.currentUser) {
+      return;
+    }
+
     let list = [];
 
     list.push(
